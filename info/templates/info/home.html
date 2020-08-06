@@ -1,0 +1,14 @@
+{%extends "info/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+   <form action='about' method="GET">
+     <fieldset class="form-group">
+                <legend class="border-bottom mb-4">Enter Handle</legend>
+                 <input type='text' name='Handle' id='Handle'>
+      </fieldset>
+     <div class="form-group">
+                <button class="btn btn-outline-info" type="submit">submit</button
+      </div>
+   </form>
+
+{% endblock %}

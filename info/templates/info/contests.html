@@ -1,0 +1,16 @@
+{%extends "info/base.html" %}
+{% load crispy_forms_tags %}
+{% block content %}
+   <h1>Contest Details</h1>
+<ol>
+  {% for article in li %}
+
+    <li></li>
+    <h3>ID: {{article.id}}</h3>
+    <h3>Name: {{article.name}}</h3>
+    <h3>type: {{article.type}}</h3>
+    <h3>DurationSeconds: {{article.durationSeconds}}</h3>
+
+  {% endfor %}
+  </ol>
+{% endblock %}
